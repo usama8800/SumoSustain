@@ -27,14 +27,11 @@ jQuery.fn.extend({
 });
 
 function save(target) {
-    console.log('save');
-    console.log('targe', target);
     let cookieval = [];
     $.each(target.selectedOptions, function (key, value) {
         cookieval.push(value.index);
     });
     setCookie(target.name, cookieval);
-    console.log('endsave')
 }
 
 function setCookie(key, value) {
