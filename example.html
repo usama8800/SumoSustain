@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.sumoselect.js"></script>
+    <script src="sumosustain.js"></script>
+
+    <link href="sumoselect.min.css" rel="stylesheet"/>
+</head>
+<body>
+
+<select multiple="multiple" name="testselect" class="testselect">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="porsche">Porche</option>
+    <option value="ferrari">Ferrari</option>
+    <option value="hyundai" selected="selected">Hyundai</option>
+    <option value="mitsubishi" selected="selected">Mitsubishi</option>
+</select>
+
+<select multiple="multiple" name="testselect1" class="testselect1" tabindex="-1">
+    <option selected="selected" value="saab">Saab</option>
+    <option value="mercedez">Mercedez</option>
+    <optgroup label="US Brands">
+        <option selected="selected" value="chrysler">Chrysler</option>
+        <option value="gm">General Motors</option>
+    </optgroup>
+    <optgroup label="French Brands">
+        <option value="renault">Renault</option>
+        <option value="nissan">Nissan</option>
+    </optgroup>
+    <optgroup label="Italian brands">
+        <option value="alpha-Romeo">Alpha Romeo</option>
+        <option value="lamborghini">Lamborghini</option>
+    </optgroup>
+    <optgroup label="German brands">
+        <option value="audi">Audi</option>
+        <option value="volkswagen">Volkswagen</option>
+    </optgroup>
+    <option value="hyundai">Hyundai</option>
+    <option value="mitsubishi">Mitsubishi</option>
+</select>
+
+<script src="example.js"></script>
+</body>
+</html>

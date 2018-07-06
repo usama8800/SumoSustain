@@ -1,13 +1,3 @@
-// Use after $(selector).SumoSelect();
-// as        $(selector).SumoSustain();
-// or        $(selector).SumorSustain(options);
-//
-// options object has one attribute:
-//     clearDefaults: takes an integer value 0, 1 or 2
-//                    0: always selects defaults
-//                    1: selects defaults only if nothing was selected
-//                    2: never selects defaults
-
 defaultOptions = {
     clearDefaults: 1
 };
@@ -31,15 +21,21 @@ jQuery.fn.extend({
                 e.sumo.selectItem(+cookie[i]);
             }
         });
-        $(this).on('sumo:closed', function (sumo) {
-            let cookieval = [];
-            $.each(sumo.target.selectedOptions, function (key, value) {
-                cookieval.push(value.index);
-            });
-            setCookie(sumo.target.name, cookieval);
-        });
+        // $(this).on('sumo:closed', sumo => save(sumo.target));
+        window.onbeforeunload = () => save($(this)[0]);
     }
 });
+
+function save(target) {
+    console.log('save');
+    console.log('targe', target);
+    let cookieval = [];
+    $.each(target.selectedOptions, function (key, value) {
+        cookieval.push(value.index);
+    });
+    setCookie(target.name, cookieval);
+    console.log('endsave')
+}
 
 function setCookie(key, value) {
     let expires = new Date();
