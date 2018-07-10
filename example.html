@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="jquery.sumoselect.js"></script>
@@ -11,7 +12,7 @@
 </head>
 <body>
 
-<select multiple="multiple" name="testselect" class="testselect">
+<select multiple="multiple" id="testselect" class="testselect">
     <option value="volvo">Volvo</option>
     <option value="saab">Saab</option>
     <option value="mercedes">Mercedes</option>
@@ -23,7 +24,7 @@
     <option value="mitsubishi" selected="selected">Mitsubishi</option>
 </select>
 
-<select multiple="multiple" name="testselect1" class="testselect1" tabindex="-1">
+<select multiple="multiple" name="testselect1" class="testselect1">
     <option selected="selected" value="saab">Saab</option>
     <option value="mercedez">Mercedez</option>
     <optgroup label="US Brands">
@@ -45,6 +46,8 @@
     <option value="hyundai">Hyundai</option>
     <option value="mitsubishi">Mitsubishi</option>
 </select>
+
+<div id="console"></div>
 
 <script src="example.js"></script>
 </body>
