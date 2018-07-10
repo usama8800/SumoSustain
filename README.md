@@ -15,6 +15,4 @@ or &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `$(selecto
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1: selects defaults only if nothing was selected  
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2: never selects defaults  
  
-_The cookies use the `name` or `id` attribute of the select element so make sure there is one.
-
-
+_The cookies use the `name` or `id` attribute of the select element so make sure there is one._
